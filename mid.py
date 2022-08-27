@@ -1,9 +1,9 @@
 from PIL import Image as image
 import cv2
 
-img = cv2.imread('93.jpg')
+img = cv2.imread('92.jpg')
 dh, dw, _ = img.shape
-text = open('93.txt',"r")
+text = open('92.txt',"r")
 for line in text:
     zero , x, y, w, h = line.split(" ")
     l = (float(x) - float(w )/ 2 )* dw
